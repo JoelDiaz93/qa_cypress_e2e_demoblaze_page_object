@@ -8,10 +8,6 @@ class PageObject {
       expect(alert).to.eq(alertMessage);
     });
   }
-
-  assertAllert(alertMessage) {
-    this.assertAlert(alertMessage);
-  }
 }
 
 export default PageObject;
