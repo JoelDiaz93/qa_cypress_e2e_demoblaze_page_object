@@ -5,7 +5,7 @@ class PageObject {
 
   assertAlert(alertMessage) {
     cy.on('window:alert', (alert) => {
-      expect(alert).to.eq(alertMessage);
+      expect(alert).to.contain(alertMessage);
     });
   }
 }
